@@ -40,7 +40,7 @@ probably try to figure out a more efficient way of dealing with that!
 const add = (a, b) => a * 1 + b * 1;
 const subtract = (a, b) => a - b;
 const multiply = (a, b) => a * b;
-const divide = (a, b) => (b == '0' ? "lol" : a / b);
+const divide = (a, b) => (b == "0" ? "lol" : a / b);
 
 const operate = (a, b, op) => {
   //main function for operating
@@ -60,8 +60,9 @@ const operate = (a, b, op) => {
     default:
       answer = "ERROR";
   }
-  answer === 'lol'? solution.innerText = 'lol' :
-  solution.innerText = Math.round(answer * 10000000) / 10000000; //to help with floating decimals
+  answer === "lol"
+    ? (solution.innerText = "lol")
+    : (solution.innerText = Math.round(answer * 10000000) / 10000000); //to help with floating decimals
 };
 
 const clickPlus = () => {
@@ -152,6 +153,8 @@ const clickBackSpace = () => {
   } else if (secondNumber === "" && operator !== "") {
     operator = "";
     problem.innerText = problem.innerText.slice(0, -1);
+  } else if (answer !== "") {
+    return;
   } else {
     secondNumber = secondNumber.slice(0, -1);
     problem.innerText = problem.innerText.slice(0, -1);
