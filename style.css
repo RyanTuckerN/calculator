@@ -1,0 +1,85 @@
+*{
+font-family: 'Roboto', sans-serif;
+font-size: xx-large;
+}
+
+html{
+  height: 100vh;
+  width: 100vw;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(117,72,4);
+  background: linear-gradient(194deg, rgb(243, 212, 155) 0%, rgb(146, 124, 100) 100%);
+}
+
+#calculator{
+  width: 275px;
+  background-color: rgb(96, 218, 207);
+  border: solid black 8px;
+  border-radius: 25px;
+  padding: 12.5px;
+  -webkit-box-shadow: 5px 15px 15px 0px rgba(0,0,0,0.65); 
+  box-shadow: 5px 15px 15px 0px rgba(0,0,0,0.65);
+}
+
+#text-area{
+  border: solid black 2px;
+  border-radius: 25px;
+  width: 100%;
+  min-height: 115px;
+  background-color: white;
+  word-wrap: break-word;
+  
+  /* padding: 7.5px; */
+  /* margin-bottom: 7.5px; */
+}
+
+#problem{
+  text-align: left;
+  padding-left: 5px;
+  font-size: medium;
+}
+
+#solution{
+  text-align: right;
+  padding-right: 5px;
+  font-size: x-large;
+}
+
+.row-cont{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+button {
+  border-radius: 10px;
+}
+button:hover{
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.grey-button > button {
+  background-color: rgb(9, 37, 41);
+  color: whitesmoke;
+  width: 75px;
+}
+
+.white-button > button {
+  background-color: whitesmoke;
+  color: rgb(16, 27, 27);
+  width: 112.5px;
+}
+
+.blue-button > button {
+  background-color: rgb(10, 87, 100);
+  color: white;
+  width: 50px;
+}
+.zero > button{
+  width: 150px;
+}
