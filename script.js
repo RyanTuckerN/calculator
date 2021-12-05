@@ -1,22 +1,26 @@
 // *** *** *** DOM buttons *** *** *** //
-const num1 = document.querySelectorAll(".grey-button")[6];
-const num2 = document.querySelectorAll(".grey-button")[7];
-const num3 = document.querySelectorAll(".grey-button")[8];
-const num4 = document.querySelectorAll(".grey-button")[3];
-const num5 = document.querySelectorAll(".grey-button")[4];
-const num6 = document.querySelectorAll(".grey-button")[5];
-const num7 = document.querySelectorAll(".grey-button")[0];
-const num8 = document.querySelectorAll(".grey-button")[1];
-const num9 = document.querySelectorAll(".grey-button")[2];
-const num0 = document.querySelectorAll(".grey-button")[9];
-const decimal = document.querySelectorAll(".grey-button")[10];
-const allClear = document.querySelectorAll(".white-button")[0];
-const backSpace = document.querySelectorAll(".white-button")[1];
+
+const numbers = document.querySelectorAll(".grey-button");
+const controls = document.querySelectorAll(".white-button");
+const operators = document.querySelectorAll(".blue-button");
+const num1 = numbers[6];
+const num2 = numbers[7];
+const num3 = numbers[8];
+const num4 = numbers[3];
+const num5 = numbers[4];
+const num6 = numbers[5];
+const num7 = numbers[0];
+const num8 = numbers[1];
+const num9 = numbers[2];
+const num0 = numbers[9];
+const decimal = numbers[10];
+const allClear = controls[0];
+const backSpace = controls[1];
 const dividedBy = document.querySelectorAll(".blue-button")[0];
-const times = document.querySelectorAll(".blue-button")[1];
-const minus = document.querySelectorAll(".blue-button")[2];
-const plus = document.querySelectorAll(".blue-button")[3];
-const equals = document.querySelectorAll(".blue-button")[4];
+const times = operators[1];
+const minus = operators[2];
+const plus = operators[3];
+const equals = operators[4];
 
 // *** DISPLAY *** //
 const problem = document.querySelector("#problem");
